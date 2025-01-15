@@ -5,9 +5,37 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/logo-flaticon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PeriTech</title>
+    <!-- Agregar el archivo de CSS aquí -->
+    <link rel="stylesheet" href="/src/styles.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header>
+        <h1>Bienvenidos a la Tienda de Periféricos</h1>
+      </header>
+      <main>
+        <section class="products">
+          <div class="card">
+            <img src="/src/assets/teclado-mecanico.jpg" alt="Teclado Mecánico">
+            <h3>Teclado Mecánico</h3>
+            <p>$150</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <img src="/src/assets/mouse-gamer.jpg" alt="Mouse Gamer">
+            <h3>Mouse Gamer</h3>
+            <p>$80</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <img src="/src/assets/monitor-4k.jpg" alt="Monitor 4K">
+            <h3>Monitor 4K</h3>
+            <p>$350</p>
+            <button>Agregar al carrito</button>
+          </div>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

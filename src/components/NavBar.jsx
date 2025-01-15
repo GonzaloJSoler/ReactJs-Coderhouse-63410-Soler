@@ -1,17 +1,18 @@
 import logo from '../assets/logo-peritech.png';  
 import CartWidget from './CartWidget';  
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg mx-5">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img
             src={logo}
             alt="Logo-Peritech"
             style={{ width: '150px' }} 
           />
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -28,16 +29,16 @@ const NavBar = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">Inicio</a>
+              <Link className="nav-link" to="/">Inicio</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Tienda</a>
+              <Link className="nav-link" to="/category/teclados">Teclados</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Nosotros</a>
+              <Link className="nav-link" to="/category/mouses">Mouses</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contacto</a>
+              <Link className="nav-link" to="/category/monitores">Monitores</Link>
             </li>
           </ul>
         </div>
